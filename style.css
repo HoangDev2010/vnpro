@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card {
+    border-radius: 20px;
+    box-shadow: 0 0 20px #5a5a5a;
+    width: 300px;
+    overflow: hidden;
+}
+.card .card-header {
+    height: 150px;
+    overflow: hidden;
+    background-image: url('https://img.freepik.com/premium-photo/abstract-futuristic-background-with-fractal-horizon-sky-blue-tones_476363-1924.jpg?w=900');
+    background-position: center;
+}
+.card .card-body {
+    background-color: #fff;
+    position: relative;
+}
+.card .card-body .avatar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 3px 2px 10px #585858;
+}
+.card .card-body .avatar img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+.card .card-body .dot {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 30px;
+    height: 20px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.card .card-body .dot span {
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    display: inline-block;
+    border-radius: 50%;
+}
+.card .card-body .list-action {
+    list-style: none;
+    display: none;
+    padding: .5rem;
+    box-shadow: 0 2px 5px #8f8f8f;
+    background-color: #fff;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+    z-index: 5;
+    position: absolute;
+    width: 120px;
+    top: 0;
+    right: 30px;
+}
+.card .card-body .list-action li {
+    padding: .25rem;
+    border-bottom: 1px solid #bebbbb;
+}
+.card .card-body .dot:hover .list-action {
+    display: block;
+}
+.list-action.active {
+    display: block !important;
+}
+.pt-5 {
+    padding-top: 4rem;
+}
+.w-50 {
+    width: 50%;
+}
+.card .card-body .desc {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card .card-body .desc .name {
+    font-size: 1.5rem;
+}
+.card .card-body .desc span {
+    font-size: .85rem;
+}
+.card .card-body .follower {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card .card-body .follower .number h4 {
+    font-size: 1.35rem;
+    color: rgb(43, 127, 236);
+}
+.card .card-body .follower .number span {
+    font-size: .85rem;
+}
+.text-center {
+    text-align: center;
+}
+.card .card-body .btn {
+    padding: 10px 15px;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.card .card-body .btn-follower {
+    background-color: yellow;
+    color: #000;
+    font-size: .8rem;
+    padding: .5rem 2rem;
+    border-radius: 100rem;
+    width: 80%;
+    font-weight: 600;
+    /* margin-bottom: .5rem; */
+}
+.card .card-body .description {
+    padding: 1rem;
+    font-size: .9rem;
+}
